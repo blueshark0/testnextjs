@@ -1,7 +1,9 @@
+import SignIn from '@/component/application/left-login-with-image-background/App'
+
 export default function Signin() {
     return (
         <>
-            <span className={'text-4xl text-red-600'}>test page</span>
+            <SignIn/>
         </>
     );
 }
