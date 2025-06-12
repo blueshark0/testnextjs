@@ -5,6 +5,8 @@ import { useState } from 'react';
 interface ApiData {
   message: string;
   time: number;
+  serverTime?: string;
+  randomId?: string;
 }
 
 interface TestApiClientProps {

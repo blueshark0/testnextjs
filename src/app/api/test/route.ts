@@ -1,10 +1,14 @@
 // 返回 JSON 数据的 Next.js API 路由
+import {getData} from "@/lib/data";
 import { NextResponse } from 'next/server';
 
 export async function GET() {
   // 模拟一些处理时间
   await new Promise(resolve => setTimeout(resolve, 100));
-  
+
+  const rs = await getData();
+
+
   return NextResponse.json({ 
     message: 'Hello from /api/test', 
     time: Date.now(),
